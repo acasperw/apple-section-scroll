@@ -1,0 +1,65 @@
+.wp-block-patter--video-player-text {
+  display: block;
+  position: relative;
+
+  // Potentially dynamic
+  min-height: 300vh;
+
+  .vp-wrapper {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  // Content
+  .vp-content {
+
+    // test
+    color: white;
+  }
+
+
+  // Video / Picture
+  .vp-background {
+
+    position: absolute;
+    background-position: 50%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+    // height: 100lvh;
+    // position: sticky;
+    // top: 0;
+
+    margin-right: calc(var(--wp--style--root--padding-right) * -1);
+    margin-left: calc(var(--wp--style--root--padding-left) * -1);
+  }
+
+  video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+
+// Inner content
+.chip-claim+.chip-claim {
+  margin-top: 58px;
+}
+
+.wp-block-patter--video-player-text {
+  font-size: 28px;
+  line-height: 1.1428571429;
+  font-weight: 600;
+  letter-spacing: .007em;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
