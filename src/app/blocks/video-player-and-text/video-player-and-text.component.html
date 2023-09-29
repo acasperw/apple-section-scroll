@@ -1,6 +1,4 @@
-<div class="vp-wrapper">
-
-
+<div class="vp-wrapper" id="yourElementId">
 
   <div class="vp-background">
     <video class="value-props-video" muted loop playsinline autoplay height="500"
@@ -9,7 +7,7 @@
 
 
   <div class="vp-content">
-    <div class="container container--thin container__patter_block_inner" style="transform: matrix(1, 0, 0, 1, 0, -216.047);"> 
+    <div class="container container--thin container__patter_block_inner" [ngStyle]="{'transform': transformScrollVal}"> 
 
       <p>Somre more content here</p>
 
