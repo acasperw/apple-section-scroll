@@ -1,0 +1,62 @@
+$black: #000;
+$white: #fff;
+$bright-green: #0DF200;
+
+.vdx-purpose-animation {
+  background: $black;
+  color: $white;
+  overflow: hidden;
+  font-size: 7.5rem;
+  line-height: 6rem;
+  letter-spacing: 1rem;
+  font-weight: bold;
+
+  // @media (max-width: map-get(variables.$breakpoints-max-widths, md)) {
+  //   display: none;
+  // }
+
+  .marquee-text {
+    position: relative;
+    overflow: hidden;
+
+    &.designer-text {
+      --offset: 5vw;
+      --move-initial: calc(-25% + var(--offset));
+      --move-final: calc(-50% + var(--offset));
+    }
+
+    &.developer-text {
+      color: $bright-green;
+      --offset: -5vw;
+      --move-initial: calc(-25% + var(--offset));
+      --move-final: calc(-50% + var(--offset));
+    }
+
+    &__inner {
+      width: fit-content;
+      display: flex;
+      position: relative;
+      transform: translate3d(var(--move-initial), 0, 0);
+      animation: marquee 5s linear infinite;
+      animation-play-state: paused;
+
+      animation-delay: calc(var(--scroll) * -1s);
+      animation-iteration-count: 1;
+      animation-fill-mode: both;
+
+      &.reverse {
+        animation-direction: reverse;
+      }
+    }
+  }
+}
+
+@keyframes marquee {
+  0% {
+      transform: translate3d(var(--move-initial), 0, 0);
+  }
+
+  100% {
+      transform: translate3d(var(--move-final), 0, 0);
+  }
+}

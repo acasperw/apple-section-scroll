@@ -1,8 +1,9 @@
 @use '@patter/patter-core-styles/scss/main';
 @use '@patter/patter-core-styles/scss/wordpress-public';
-@use '../../../Patter/patter-core-styles/scss/independent-styles-setup'; // @use '@patter/patter-core-styles/scss/independent-styles-setup';
+@use '../../../Patter/patter-core-styles/scss/independent-styles-setup'; 
+// @use '@patter/patter-core-styles/scss/independent-styles-setup';
 @use '@patter/patter-core-styles/scss/aos-animations';
 
 // Blocks
 @use './styles/video-text-player';
-
+@use './styles/scroll-text-css';

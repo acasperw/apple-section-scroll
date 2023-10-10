@@ -10,6 +10,7 @@ import { NormalTestBlockComponent } from './blocks/normal-test-block/normal-test
 import { BlockFullHeightDirective } from './helpers/block-full-height.directive';
 import { BlockBackgroundLightDirective } from './helpers/block-background-light.directive';
 import { BlockSmallPaddingDirective } from './helpers/block-small-padding.directive';
+import { TextScrollCssComponent } from './blocks/text-scroll-css/text-scroll-css.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { BlockSmallPaddingDirective } from './helpers/block-small-padding.direct
     NormalTestBlockComponent,
     BlockFullHeightDirective,
     BlockBackgroundLightDirective,
-    BlockSmallPaddingDirective
+    BlockSmallPaddingDirective,
+    TextScrollCssComponent
   ],
   imports: [
     BrowserModule,
